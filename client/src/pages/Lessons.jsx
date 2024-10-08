@@ -8,7 +8,7 @@ function Lessons() {
   useEffect(() => {
     async function getLessons() {
       console.log(process.env.DOMAIN);
-      const response = await fetch(`${process.env.DOMAIN}/lesson/`);
+      const response = await fetch(`http://localhost:5050/lesson/`);
       if (!response.ok) {
         const message = `An error occurred: ${response.statusText}`;
         console.error(message);

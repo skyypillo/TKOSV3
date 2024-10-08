@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-family: "Source Serif 4", serif;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flexcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 8vw;
+  line-height: 1em;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 5vw;
+  line-height: 1em;
+}
+
+h6 {
+  font-size: 1vw;
+  line-height: 1em;
+}
+
+.contact > input,
+.contact > textarea {
+  padding: 0px 20px;
+  margin: 10px 0px;
+  border-bottom: 2px solid black;
+  font-size: 24px;
+}
+.contact > input:focus,
+.contact > textarea:focus {
+  outline: none;
+}
+
+.contact > textarea {
+  height: 100px;
+  resize: none;
+}

@@ -7,7 +7,8 @@ function Lessons() {
   // This method fetches the lessons from the database.
   useEffect(() => {
     async function getLessons() {
-      const response = await fetch(`http://localhost:5050/lesson/`);
+      // const response = await fetch(`http://localhost:5050/lesson/`);
+      const response = await fetch(`${process.env.DOMAIN}/lesson/`);
       if (!response.ok) {
         const message = `An error occurred: ${response.statusText}`;
         console.error(message);
